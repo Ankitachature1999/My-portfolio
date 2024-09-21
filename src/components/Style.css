@@ -1,0 +1,389 @@
+/* Add any global styles here */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  /* src/components/Style.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style.css */
+
+/* Ensure the header sticks to the top */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Style the h1 tag within the header */
+header h1 {
+  font-size: 1.5rem;
+  margin: 0; /* Remove default margin */
+}
+
+/* Style the navigation list */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Style the navigation list items */
+nav ul li {
+  list-style: none;
+}
+
+/* Style the navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style the active and hover states of navigation links */
+nav a:hover,
+nav a.active {
+  color: #ff6347; /* Tomato color for active and hover states */
+}
+
+  
+  /* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    color: #ff6347; /* Tomato color for hover state */
+  }
+  
+  /* src/components/Home.css */
+
+/* Styles for the .home-page container */
+.home-page {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4efef; /* Dark background color */
+  color: white; /* Text color */
+}
+
+/* Styles for the left and right sections within .home-page */
+.left, .right {
+  flex: 1; /* Both sections take equal space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the left section */
+
+
+
+
+/* Styles for the right section */
+.right {
+  padding: 2rem; /* Padding inside the right section */
+  text-align: left; /* Left-align text */
+ 
+}
+
+.right {
+  display: flex;.left {
+    width: 100%;
+    text-align: center;
+   
+  }
+  
+  .profile-image {
+    max-width: 100%;
+    height: auto; /* Set a specific height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center;  /* Center text */
+}
+
+.right h1, .right p, .right .buttons {
+  margin: 10px 0; /* Add some spacing between elements */
+}
+
+.buttons {
+  display: flex;
+  gap: 10px; /* Add space between buttons */
+}
+
+button {
+  padding: 10px 20px; /* Add some padding to buttons */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+
+/* Styles for generic buttons */
+button {
+  padding: 1rem 2rem; /* Padding inside buttons */
+  border: none; /* No border */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Cursor style */
+}
+
+/* Styles for the 'Explore' button */
+.explore-btn {
+  background-color: rgb(205, 202, 202); /* White background */
+  color: black; /* Black text */
+}
+
+/* Styles for the 'Play' button */
+.play-btn {
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  border: 1px solid white; /* White border */
+}
+
+/* Styles for the page number indicator */
+
+.typing-text {
+  font-family: Arial, Helvetica, sans-serif;
+color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid orange; /* Cursor effect */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
+
+.profile-image {
+  width: 50%; /* 100% width of its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center;  /* Center text */
+}
+
+.right h1, .right p, .right .buttons {
+  margin: 10px 0; /* Add some spacing between elements */
+}
+
+.buttons {
+  display: flex;
+  gap: 10px; /* Add space between buttons */
+}
+
+button {
+  padding: 10px 20px; /* Add some padding to buttons */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+
+ 
+
+
+
+
+
+
+
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9; /* Light background color for the entire page */
+}
+
+/* Header Section */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #2a2b2b;
+  color: white;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.header p {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #555; /* Darker hover color for navigation links */
+}
+
+/* Main Content Section */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px; /* Increased margin for better spacing */
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px; /* Rounded corners for sidebar */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.main {
+  flex: 70%;
+  background-color: #ffffff; /* White background for main content */
+  padding: 20px;
+  border-radius: 5px; /* Rounded corners for main content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Fake Image */
+.fakeimg {
+  background-color: #ddd;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px; /* Rounded corners for fake images */
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  color: white;
+  margin-top: 20px; /* Increased margin above footer */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+    margin: 10px; /* Adjusted margin for smaller screens */
+  }
+
+  .side, .main {
+    flex: 100%;
+    margin-bottom: 10px; /* Improved spacing between sections */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+/* Updated CSS for .column */
+.column {
+  float: left;
+  width: calc(50% - 20px); /* Calculate width to maintain spacing */
+  padding: 10px;
+  margin-bottom: 20px; /* Increased margin bottom for better separation */
+  height: auto; /* Adjusted height to be flexible */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #ffffff; /* White background */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
